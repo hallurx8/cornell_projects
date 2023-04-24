@@ -5,6 +5,15 @@ raw = importdata("SH.xlsx");
 seq = raw.data; % 时间序列的数据
 dates = raw.textdata(2:end,1); % 时间序列的刻度
 
+%%%%%%%%
+% data = readtable("T10Y2Y.csv")
+% dates = data.DATE
+% rate = data.T10Y2Y 
+% nanRows = any(isnan(rate),2)
+% dates = dates(~nanRows,:)
+% rate = rate(~nanRows,:)
+% 
+% seq = log(rate(2:end, 1)./rate(1:end-1,1))
 % 状态预测
 mode = 5;
 s_pred = markov_switching_model(seq,mode,'trend');

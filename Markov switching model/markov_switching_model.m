@@ -343,7 +343,7 @@ fprintf("%8.4f\n",p_11);
 fprintf("%8.4f\n",1/(1-p_00));
 fprintf("%8.4f\n",1/(1-p_11));
 fprintf("%8.4f\n",cur_L);
-%disp([sigma_0, sigma_1, p_00, p_11, 1/(1-p_00), 1/(1-p_11), cur_L]) ;
+disp([sigma_0, sigma_1, p_00, p_11, 1/(1-p_00), 1/(1-p_11), cur_L]) ;
 
 end
 
