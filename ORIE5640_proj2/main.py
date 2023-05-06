@@ -16,11 +16,11 @@ if __name__ == '__main__':
         seq = np.array(raw)
         dates = raw.index
 
-        mode = 2
+        mode = 1
         s_pred = EM.markow_switching_model(seq, mode, init)
         
         plt.plot(dates, s_pred)
         plt.show()
 
 
-    generateModel('int')
+    generateModel('ret')

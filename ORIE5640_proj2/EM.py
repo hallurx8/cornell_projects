@@ -190,6 +190,7 @@ def MSMH2_AR0(y, s0):
         print(gamma_00[1,1:])
         print(s_pred)
     
+    print('prediction of current state: %.6f' %s_pred[-2])
     print('prediction of next state: %.6f' %s_pred[-1])
     print('mu0: %.6f' % u_0)
     print('mu1: %.6f' % u_1)
@@ -329,6 +330,7 @@ def MSH2_AR1(y, s0):
     s_pred = np.append(gamma_00[1,1:], s_pred[1])
 
     try:
+        print('prediction of current state: %.6f' %s_pred[-2])
         print('prediction of next state: %.6f' %s_pred[-1])
         print('alpha: %.6f' % alpha.real)
         print('sigma0: %.6f' % sigma_0.real)
