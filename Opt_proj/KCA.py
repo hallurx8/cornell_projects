@@ -3,12 +3,12 @@ from pykalman import KalmanFilter
 
 def fitKCA(t,z,q,fwd=0):
     '''
-    Inputs:
+    Args:
         t: iterable with time indices
         z: iterable with measurements
         q: scalar that multiplies the seed states covariance
         fwd: number of steps to forecast (default to 0)
-    Outputs:
+    Returns:
         x[0]: smoothed state means of position velocity and acceleration
         x[1]: smoothed state covar of position velocity and acceleration
     '''
